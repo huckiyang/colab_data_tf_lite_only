@@ -2,11 +2,6 @@ import numpy as np
 import pandas as pd
 import pickle
 
-ThisPath = '/home/ma-prof/Group/huck/0_Speech/data_2020/tau-2020-Task-1b/'
-train_csv = ThisPath + 'evaluation_setup/fold1_train.csv'
-val_csv = ThisPath + 'evaluation_setup/fold1_evaluate.csv'
-feat_path = '/home/ma-prof/Group/huck/0_Speech/DCASE_2020_Task1/2020_1b_features'
-experiments = 'exp_2020_1b_test_mobnet'
 
 def load_data_2020(feat_path, csv_path, feat_dim, file_type):
     with open(csv_path, 'r') as text_file:
